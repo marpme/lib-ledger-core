@@ -32,43 +32,46 @@
 #define LEDGER_CORE_CURRENCIES_HPP
 
 #ifndef LIBCORE_EXPORT
-    #if defined(_MSC_VER) && _MSC_VER <= 1900
-        #include <libcore_export.h>
-    #else
-        #define LIBCORE_EXPORT
-    #endif
+#if defined(_MSC_VER) && _MSC_VER <= 1900
+#include <libcore_export.h>
+#else
+#define LIBCORE_EXPORT
+#endif
 #endif
 
 #include <api/Currency.hpp>
 
-namespace ledger {
-    namespace core {
-        namespace currencies {
-            extern LIBCORE_EXPORT const std::vector<api::Currency> ALL;
-            extern LIBCORE_EXPORT const api::Currency BITCOIN;
-            extern LIBCORE_EXPORT const api::Currency BITCOIN_TESTNET;
-            extern LIBCORE_EXPORT const api::Currency BITCOIN_CASH;
-            extern LIBCORE_EXPORT const api::Currency BITCOIN_GOLD;
-            extern LIBCORE_EXPORT const api::Currency ZCASH;
-            extern LIBCORE_EXPORT const api::Currency ZENCASH;
-            extern LIBCORE_EXPORT const api::Currency LITECOIN;
-            extern LIBCORE_EXPORT const api::Currency PEERCOIN;
-            extern LIBCORE_EXPORT const api::Currency DIGIBYTE;
-            extern LIBCORE_EXPORT const api::Currency HCASH;
-            extern LIBCORE_EXPORT const api::Currency QTUM;
-            extern LIBCORE_EXPORT const api::Currency STEALTHCOIN;
-            extern LIBCORE_EXPORT const api::Currency VERTCOIN;
-            extern LIBCORE_EXPORT const api::Currency VIACOIN;
-            extern LIBCORE_EXPORT const api::Currency DASH;
-            extern LIBCORE_EXPORT const api::Currency DOGECOIN;
-            extern LIBCORE_EXPORT const api::Currency STRATIS;
-            extern LIBCORE_EXPORT const api::Currency KOMODO;
-            extern LIBCORE_EXPORT const api::Currency POSWALLET;
-            extern LIBCORE_EXPORT const api::Currency PIVX;
-            extern LIBCORE_EXPORT const api::Currency CLUBCOIN;
-        };
-    }
-}
-
+namespace ledger
+{
+namespace core
+{
+namespace currencies
+{
+extern LIBCORE_EXPORT const std::vector<api::Currency> ALL;
+extern LIBCORE_EXPORT const api::Currency BITCOIN;
+extern LIBCORE_EXPORT const api::Currency BITCOIN_TESTNET;
+extern LIBCORE_EXPORT const api::Currency BITCOIN_CASH;
+extern LIBCORE_EXPORT const api::Currency BITCOIN_GOLD;
+extern LIBCORE_EXPORT const api::Currency ZCASH;
+extern LIBCORE_EXPORT const api::Currency ZENCASH;
+extern LIBCORE_EXPORT const api::Currency LITECOIN;
+extern LIBCORE_EXPORT const api::Currency PEERCOIN;
+extern LIBCORE_EXPORT const api::Currency DIGIBYTE;
+extern LIBCORE_EXPORT const api::Currency HCASH;
+extern LIBCORE_EXPORT const api::Currency QTUM;
+extern LIBCORE_EXPORT const api::Currency STEALTHCOIN;
+extern LIBCORE_EXPORT const api::Currency VERTCOIN;
+extern LIBCORE_EXPORT const api::Currency VIACOIN;
+extern LIBCORE_EXPORT const api::Currency DASH;
+extern LIBCORE_EXPORT const api::Currency DOGECOIN;
+extern LIBCORE_EXPORT const api::Currency VERGE;
+extern LIBCORE_EXPORT const api::Currency STRATIS;
+extern LIBCORE_EXPORT const api::Currency KOMODO;
+extern LIBCORE_EXPORT const api::Currency POSWALLET;
+extern LIBCORE_EXPORT const api::Currency PIVX;
+extern LIBCORE_EXPORT const api::Currency CLUBCOIN;
+}; // namespace currencies
+} // namespace core
+} // namespace ledger
 
 #endif //LEDGER_CORE_CURRENCIES_HPP
