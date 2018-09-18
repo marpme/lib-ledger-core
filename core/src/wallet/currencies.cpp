@@ -182,7 +182,7 @@ const api::Currency DOGECOIN =
         .unit("dogecoin", 8, "DOGE")
         .unit("milli-dogecoin", 5, "mDOGE");
 
-const api::Currency DOGECOIN =
+const api::Currency VERGE =
     Currency("verge")
         .forkOfBitcoin(networks::getNetworkParameters("verge"))
         .bip44(3)
